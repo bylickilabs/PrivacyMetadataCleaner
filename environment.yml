@@ -1,0 +1,22 @@
+name: privacy-metadata-cleaner
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - exiftool                # Mächtiges Werkzeug für EXIF/Metadaten (Shell)
+      - exifread                # EXIF-Analyse für Bilder
+      - pillow                  # Bildbearbeitung (PIL)
+      - pikepdf                 # PDF-Handling und Metadaten-Entfernung
+      - python-docx             # Office-Dokumente (Word)
+      - openpyxl                # Office-Dokumente (Excel)
+      - pywin32                 # Windows-spezifische Office-APIs (optional)
+      - tk                      # GUI-Support (Tkinter)
+      - flake8                  # Linting
+      - pytest                  # Testing
+      - tqdm                    # Fortschrittsbalken (optional, Usability)
+      - send2trash              # Sicheres Löschen in Papierkorb
+      - python-magic            # Dateityperkennung
+      - pyinstaller             # Packaging als .exe
